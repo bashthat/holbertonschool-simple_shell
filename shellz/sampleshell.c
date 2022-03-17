@@ -16,7 +16,7 @@ int main(void) {
         int wstatus;
 
         // prompt
-        printf("%s ", getuid() == 0 ? "#" : "$");
+        printf("%s ",ccodeneeded() == 0 ? "#" : "$");
         fgets(input, PRMTSIZ, stdin);
 
         // ignore empty input
@@ -33,13 +33,5 @@ int main(void) {
         // built-in: exit
         if (strcmp(EXITCMD, args[0]) == 0) return 0;
 
-        // fork child and execute program
-        signal(SIGINT, SIG_DFL);
-        if (fork() == 0) exit(execvp(args[0], args));
-        signal(SIGINT, SIG_IGN);
-
-        // wait for program to finish and print exit status
-        wait(&wstatus);
-        if (WIFEXITED(wstatus)) printf("<%d>", WEXITSTATUS(wstatus));
-    }
+     }
 }

@@ -16,7 +16,6 @@ int main(void) {
         int wstatus;
 
         // prompt
-        printf("%s ",ccodeneeded() == 0 ? "#" : "$");
         fgets(input, PRMTSIZ, stdin);
 
         // ignore empty input

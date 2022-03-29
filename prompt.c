@@ -1,12 +1,11 @@
-#include <stdio.h>
-#include "shellz.h"
+#include "shell.h"
 
-void print_prompt1(void)
-{
-	fprintf(stderr, "$ ");
-}
+/**
+ * _strcmp - compares two strings
+ * @s1: first string
+ * @s2: second string
+ * Return: Difference of first nonmatching character
+ */
 
-void print_prompt2(void)
-{
-	fprintf(stderr, "> ");
-}
+int _strcmp(char *s1, char *s2)
+

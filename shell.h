@@ -16,12 +16,7 @@
 #define LINE_SIZE 1024
 #define TOKEN_DELIMITERS " \t\r\n\a"
 
-<<<<<<< HEAD
-node 
-=======
 extern char **environ;
->>>>>>> f23d76943637ffa20a71d8fd5d203298cc869680
-
 /**
  * struct builtins - Has builtins and associated funcs
  * @arg: Builtins name

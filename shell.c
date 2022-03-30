@@ -22,7 +22,6 @@ void shell(int ac, char **av, char **env)
 	er = "error";
 	do {
 		prompt();
-		printf("here i am\n");
 		line = _getline();
 		args = split_line(line);
 		flow = bridge(args[0], args);

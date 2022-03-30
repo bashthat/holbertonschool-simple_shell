@@ -42,7 +42,7 @@ void shell(int ac, char **av, char **env)
 		free(line);
 		free(args);
 	}
-	while (status)
+	while (status);
 	if (!ac)
 		(void)ac;
 	if (!av)

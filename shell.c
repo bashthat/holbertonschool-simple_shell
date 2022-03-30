@@ -40,13 +40,10 @@ void shell(int ac, char **av, char **env)
 		}
 		if (args[0] != er)
 			status = execute_prog(args, line, env, flow);
-<<<<<<< HEAD
+
 	free(line);
 	free(args);
 
-=======
-				free(args);
->>>>>>> e626b21965ff6ff3c419076749dd37fc0827e4cd
 	}
 	while (status);
 	if (!ac)

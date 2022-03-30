@@ -39,8 +39,7 @@ void shell(int ac, char **av, char **env)
 		}
 		if (args[0] != er)
 			status = execute_prog(args, line, env, flow);
-		free(line);
-		free(args);
+				free(args);
 	}
 	while (status);
 	if (!ac)

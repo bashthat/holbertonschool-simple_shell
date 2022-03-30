@@ -89,7 +89,7 @@ char *save_path(char *tmp, char *path)
 
 	if (!tmp)
 	{
-		tmp = malloc(sizeof(char) * 100);
+		tmp = malloc(sizeof(char) * _strlen(path));
 		while (path[i])
 		{
 			tmp[i] = path[i];

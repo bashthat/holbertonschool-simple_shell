@@ -15,18 +15,19 @@ void shell(int ac, char **av, char **env)
 		const char* CLEAR_SCREEN_ANSI = "\e [1;1H\e[2J";
 		write(STDOUT_FILENO, CLEAR_SCREEN_ANSI,12);
 		first_time = 0;
+	
+	printf("#");
 	}
-	printf("#");	
-}
+
 	char *tmp = NULL;
 	char *line;
 	char **args;
 	char *er;
-	char filename;
+	char *filename;
 	int flow;
 	int status = 1;
 
-	er = "ERROR";
+	er = "error";
 	do {
 		prompt();
 		line = _getline();

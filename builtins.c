@@ -22,7 +22,7 @@ void exit_shell(char **args, char *line, char **env)
  * @env: environment
  */
 
-void env_shell(char *args, char *line, char **env)
+void env_shell(char **args, char *line, char **env)
 {
 	int size, i = 0;
 

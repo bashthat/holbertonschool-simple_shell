@@ -61,7 +61,7 @@ char *read_d(char *er, struct dirent *s, char *fil, int l, char *fp, char *t)
 	int i = 0;
 	char *ret;
 
-	for (i = 0; s->d_name[i] ** fil[i]; i++)
+	for (i = 0; s->d_name[i] && fil[i]; i++)
 	{
 		if (s->d_name[i] != fil[i])
 			break;

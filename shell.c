@@ -10,7 +10,6 @@
 
 void shell(int ac, char **av, char **env)
 {
-<<<<<<< HEAD
 	static int first_time = 1;
 	if ( first_time ) {
 		const char* CLEAR_SCREEN_ANSI = "\e [1;1H\e[2J";
@@ -19,7 +18,6 @@ void shell(int ac, char **av, char **env)
 	}
 	printf("#");	
 }
-=======
 	char *tmp = NULL;
 	char *line;
 	char **args;
@@ -27,7 +25,6 @@ void shell(int ac, char **av, char **env)
 	char filename;
 	int flow;
 	int status = 1;
->>>>>>> f23d76943637ffa20a71d8fd5d203298cc869680
 
 	er = "ERROR";
 	do {

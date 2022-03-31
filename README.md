@@ -12,7 +12,7 @@ This will execute the program and give you the prompt to work from hense the "$"
 
 Current builtin commands:
 
-1. help - prints list of avaialable builtin commands. 
+1. help - prints list of avaialable builtin commands.
 2. cd - changes the current working directory.
 3. env - prints out the current shell varriables.
 4. exit - exits the shell.

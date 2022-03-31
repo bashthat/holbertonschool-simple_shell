@@ -79,5 +79,5 @@ ssize_t _getline(char **lineptr, size_t *n)
 			break;
 	}
 	*curr = '\0';
-	return (ssize_t)(curr - *lineptr);
+	return ((ssize_t)(curr - *lineptr));
 }

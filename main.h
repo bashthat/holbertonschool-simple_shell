@@ -15,7 +15,7 @@
 
 
 /**
- * struct builtin_t - stores pointers to builtin functions
+ * struct builtin_s - stores pointers to builtin functions
  * @name: name of builtin.
  * @f: function pointer to builtin.
  */
@@ -26,7 +26,8 @@ typedef struct builtin_s
 } builtin_t;
 
 /**
- * struct memaddr_t = list to remember pointers that need to be freed.
+ * struct memaddr_s - list for struct
+ * memaddr_t - list to remember pointers.
  * @name: name data
  * @prev: pointer to previous location.
  * @next: pointer to next location.

@@ -42,9 +42,10 @@ char **read_line(void)
 }
 
 /**
- *
- *
- *
+ * _getline - observes line for token
+ * @lineptr: pointer to line
+ * @n: n
+ * Return: zero
  */
 ssize_t _getline(char **lineptr, size_t *n)
 {

@@ -41,9 +41,10 @@ char *_memset(char *s, char b, unsigned int n)
 }
 
 /**
- *
- *
- *
+ * _memcpy - copies
+ * @dest: destination
+ * @src: source for destination
+ * @n: n
  */
 void _memcpy(char *dest, char *src, size_t n)
 {
@@ -59,10 +60,10 @@ void _memcpy(char *dest, char *src, size_t n)
 
 
 /**
- *
- *
- *
- *
+ * _realloc - realoc
+ * @ptr: pointer
+ * @size: size
+ * Return: ptr
  */
 void *_realloc(char *ptr, size_t size)
 {

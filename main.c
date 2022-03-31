@@ -1,21 +1,30 @@
-#include "shell.h"
+#include "main.h"
 
 /**
- * main - entry point for shell
- * @ac: argument count
- * @av: array of arguments
- * @env: environment
- * Return: Always 0
+ * main - shell for taking user commands
+ *
+ * @argc: argument count.
+ * @argv: the arguments.
+ * @envp: envroment pointer?
+ * Return: int 0, upon exit.
  */
 
-int main(int ac, char **av, char **env)
+int main(int argc, char **argv, char **envp)
 {
-	if (!ac)
-		(void)ac;
-	if (!av)
-		(void)av;
-	if (!env)
-		(void)env;
-	shell(ac, av, env);
+	char **line;
+	char **args;
+	int status;
+	(void) argc, (void) argv;
+
+	do {
+		printf("$ ");
+		line = read_line();
+		args = split_line(*line);
+		status = _execute(args, envp);
+
+		free(*line);
+		free(args);
+
+	} while (status);
 	return (0);
 }

@@ -1,0 +1,19 @@
+.TH man 1 "30 March 2022" "0.1" "HSH man page"
+.SH NAME
+.B Holberton 0x17. C - Simple Shell
+A simple shell hense the HSH output to the program. But, a simple shell used in bashshell written in the C language..
+.SH SYNOPSIS
+hsh : has a few simple commands;
+.SH DESCRIPTION
+A recreation of the shell as a project for Holberton School Tulsa cohort 17.
+.SH BUILT-INS
+.B 1. help - lists commands.
+.B 2. exit - exits shell.
+.B 3. cd - changes directory.
+.B 4. env - sifts environment
+.SH SEE ALSO
+.I sh, bash, exeev, execbp, execve etc.
+.SH BUGS
+to be added.
+.SH AUTHOR
+Sam Alberts, and Johnathan Pickette. See AUTHORS file for more detail.
